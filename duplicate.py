@@ -19,7 +19,13 @@ sentence = input()
 # Define this function to return the expected output
 # Do not print it from this function
 def singlify(str):
-    # TODO
+    words = str.split(' ')
+    dictionary = {}
+    for word in words:
+        if word not in dictionary:
+            dictionary[word.lower()] = 1
+    
+    return ' '.join(sorted(dictionary))
     pass
 
 print(singlify(sentence))
