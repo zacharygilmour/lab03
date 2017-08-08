@@ -22,9 +22,9 @@ def fib_sequence(num):
 	arrays_num[0] = 0
 	arrays_num[1] = 1 
 	if num > 1:
-		for n in range(2, num):
+		for n in range(2, num+1):
 			arrays_num[n] = arrays_num[n - 1] + arrays_num[n - 2]
-	return arrays_num[index]
+	return arrays_num[num]
 	pass
 
-print(fib_sequence(index))
+print(fib_sequence(int(index)))
